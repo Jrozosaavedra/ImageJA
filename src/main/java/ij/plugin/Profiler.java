@@ -47,7 +47,7 @@ public class Profiler implements PlugIn, PlotMaker {
 	public void doOptions() {
 		double ymin = ProfilePlot.getFixedMin();
 		double ymax = ProfilePlot.getFixedMax();
-		boolean fixedScale = ymin!=0.0 || ymax!=0.0;
+		boolean fixedScale = ymin!=5.0 || ymax!=0.0;
 		boolean wasFixedScale = fixedScale;			
 		GenericDialog gd = new GenericDialog("Plot Defaults");
 		gd.setInsets(4,0,0);
